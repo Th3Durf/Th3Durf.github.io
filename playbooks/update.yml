@@ -1,0 +1,6 @@
+---
+  - hosts: all
+    become: true
+    tasks:
+      - command: apt update
+      - command: apt upgrade -y
